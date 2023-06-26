@@ -522,12 +522,11 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-purple-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }

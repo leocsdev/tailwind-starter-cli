@@ -1,96 +1,31 @@
-# Tailwind Starter CLI
+# Simple Tailwind CSS Starter
 
-## L025 Create An Environment With Tailwind CLI
+This is an extremley simple setup to develop Tailwind projects. This will be used in my Tailwind From Scratch course.
 
-Initialize `package.json`
+## Usage
 
-```bash
-npm init -y
+Install dependencies
+
+```
+npm install
 ```
 
-Note: You can follow the instruction on installing Tailwind CLI [here](https://tailwindcss.com/docs/installation).
+Run Tailwind CLI in watch mode
 
-Install tailwind css
-
-```bash
-npm install -D tailwindcss
+```
+npm run dev
 ```
 
-Initialize tailwind config
+You can use tailwind classes in any .html files in the root directory
 
-```bash
-npx tailwindcss init
+Put any custom CSS that you may have in the **src/input.css** file
+
+Add any config values to the **tailwind.config.js** file
+
+To build once, run
+
 ```
-
-Configure your template paths
-
-```javascript
-// tailwind.config.js
-
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./*.html'],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
-```
-
-Add the Tailwind directives to your CSS
-
-```css
-/* input.css */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-Create NPM script to run tailwind css
-
-```json
-// package.json
-
-{
-  // ...
-
-  "scripts": {
-    "build": "tailwind -i ./input.css -o ./css/style.css",
-    "watch": "tailwind -i ./input.css -o ./css/style.css --watch"
-  }
-
-  // ...
-}
-```
-
-Run the build. This will create the `css/style.css` file
-
-```bash
 npm run build
 ```
 
-Create `index.html` template
-
-```html
-<!-- index.html -->
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Simple Tailwind CSS</title>
-  </head>
-  <body>
-    <h1 class="text-3xl">Simple Tailwind CSS</h1>
-  </body>
-</html>
-```
-
-Run the npm watch to render css changes
-
-```bash
-npm run watch
-```
+You only need to deploy your html files and css/style.css

@@ -1,7 +1,7 @@
 {
   "name": "tailwind-starter-cli",
   "version": "1.0.0",
-  "description": "## L025. Create An Environment With Tailwind CLI",
+  "description": "Simple file structure for Tailwind projects",
   "main": "index.js",
   "scripts": {
     "build": "tailwind -i ./input.css -o ./css/style.css",
