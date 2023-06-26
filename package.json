@@ -1,0 +1,16 @@
+{
+  "name": "tailwind-starter-cli",
+  "version": "1.0.0",
+  "description": "## L025. Create An Environment With Tailwind CLI",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwind -i ./input.css -o ./css/style.css",
+    "watch": "tailwind -i ./input.css -o ./css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
